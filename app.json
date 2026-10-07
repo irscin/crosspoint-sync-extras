@@ -2,7 +2,7 @@
   "expo": {
     "name": "CrossPoint Sync",
     "slug": "crosspoint-sync",
-    "version": "1.2.0",
+    "version": "1.2.0-extra.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "crosspointsync",
@@ -36,7 +36,8 @@
         "android.permission.CHANGE_WIFI_MULTICAST_STATE",
         "android.permission.ACCESS_WIFI_STATE",
         "android.permission.ACCESS_NETWORK_STATE"
-      ]
+      ],
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
