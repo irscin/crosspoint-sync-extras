@@ -20,7 +20,8 @@
         "UISupportsDocumentBrowser": true,
         "LSSupportsOpeningDocumentsInPlace": true,
         "NSLocalNetworkUsageDescription": "CrossPoint Sync needs local network access to discover and communicate with your e-ink reader device.",
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSBluetoothAlwaysUsageDescription": "CrossPoint Sync uses Bluetooth to add and check off priorities on your e-ink reader."
       }
     },
     "android": {
@@ -47,7 +48,15 @@
       "expo-document-picker",
       "./plugins/withShareExtension",
       "./plugins/withWebExtension",
-      "./plugins/withAndroidShareIntent"
+      "./plugins/withAndroidShareIntent",
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "neverForLocation": true,
+          "bluetoothAlwaysPermission": "CrossPoint Sync uses Bluetooth to add and check off priorities on your e-ink reader."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

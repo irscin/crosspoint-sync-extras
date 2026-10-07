@@ -22,7 +22,8 @@
     "test:epub:unit": "npx tsx scripts/epub-test.ts --unit",
     "test:epub:integration": "npx tsx scripts/epub-test.ts --integration",
     "test:delete": "npx tsx scripts/delete-protocol-test.ts",
-    "appstore:screenshots": "node scripts/generate-appstore-screenshots.js"
+    "appstore:screenshots": "node scripts/generate-appstore-screenshots.js",
+    "test:tasks": "npx tsx scripts/task-protocol-test.ts && npx tsx scripts/reorder-test.ts"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -50,6 +51,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.5",
+    "react-native-ble-plx": "^3.5.0",
     "react-native-gesture-handler": "~2.28.0",
     "react-native-reanimated": "~4.1.1",
     "react-native-safe-area-context": "~5.6.0",
